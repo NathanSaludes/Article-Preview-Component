@@ -1,0 +1,20 @@
+html {
+	font-size: 13px;
+	box-sizing: border-box;
+	font-family: "Manrope", sans-serif;
+}
+
+*, *::before, *::after{
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $light_grayish_blue;
+	margin: 0;
+	padding: 0 2rem;
+	line-height: 1.5;
+	height: 100vh;
+	@include center(vertical);
+}

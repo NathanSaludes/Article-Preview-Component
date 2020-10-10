@@ -1,0 +1,112 @@
+@import "variables";
+@import "mixins";
+@import "globals";
+
+.card {
+	background-color: white;
+	max-width: $card-mb;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: $default-shadow;
+}
+
+.image-segment {
+	background-color: #ff00ff28;
+	width: 100%;
+	max-height: 205px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
+.content-segment {
+	padding: 2rem 2rem 1.5rem;
+
+	.content__header {
+		font-size: $font-header-sm;
+		font-weight: 700;
+		color: $very_dark_grayish_blue;
+		margin-bottom: 1rem;
+	}
+
+	.content__description {
+		font-size: $font-default;
+		font-weight: 500;
+		color: $desaturated_dark_blue;
+	}
+
+	.content__author {
+		margin-top: 2rem;
+		font-size: $font-default;
+		display: flex;
+		align-items: center;
+
+		.author__avatar {
+			border-radius: 100%;
+			height: 40px;
+		}
+
+		.author__meta {
+			margin-left: 1rem;
+
+			.author__name {
+				font-weight: 700;
+				color: $very_dark_grayish_blue;
+			}
+
+			.author_date {
+				color: $grayish_blue;
+			}
+		}
+
+		.share-button {
+			border: none;
+			background-color: $light_grayish_blue;
+			padding: 0.62rem 0.75rem;
+			border-radius: 100%;
+			margin-left: auto;
+			outline: none;
+
+			img {
+				height: 0.8rem;
+			}
+
+			&:active {
+				filter: brightness(0.95);
+			}
+		}
+	}
+}
+
+// For Tablets & Desktops -----------------------------------------------------------------------------------
+@media (min-width: 768px) {
+	.card {
+		max-width: $card-lg;
+		height: 21.5rem;
+		display: flex;
+	}
+
+	.image-segment {
+		width: 63rem;
+		max-height: 100%;
+		overflow: hidden;
+
+		img {
+			height: 100%;
+			object-fit: cover;
+			object-position: left;
+		}
+	}
+
+	.content-segment {
+		padding: 2.5rem 2.5rem;
+
+		.content__header {
+			font-size: $font-header-lg;
+		}
+	}
+}

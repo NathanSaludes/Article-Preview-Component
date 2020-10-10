@@ -1,0 +1,21 @@
+// Theme
+$very_dark_grayish_blue: hsl(217, 19%, 35%);
+$desaturated_dark_blue: hsl(214, 17%, 51%);
+$grayish_blue: hsl(212, 23%, 69%);
+$light_grayish_blue: hsl(210, 46%, 95%);
+
+// shadows
+$default-shadow:
+	0 4.5px 3.6px rgba(0, 0, 0, 0.014),
+	0 12.5px 10px rgba(0, 0, 0, 0.02),
+	0 30.1px 24.1px rgba(0, 0, 0, 0.026),
+	0 100px 80px rgba(0, 0, 0, 0.04);
+
+// Font sizes
+$font-default: 1rem;
+$font-header-sm: 1.2rem;
+$font-header-lg: 1.5rem;
+
+// card widths
+$card-mb: 24rem;
+$card-lg: 56rem;

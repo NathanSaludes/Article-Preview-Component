@@ -1,0 +1,11 @@
+$alignment_direction: (
+	"vertical": column,
+	"horizontal": row,
+);
+
+@mixin center($direction) {
+	display: flex;
+	flex-direction: map-get($map: $alignment_direction, $key: $direction);
+	align-items: center;
+	justify-content: center;
+}
