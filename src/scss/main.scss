@@ -2,12 +2,18 @@
 @import "mixins";
 @import "globals";
 
+.component_title {
+	color: $grayish_blue;
+	margin-bottom: 2rem;
+}
+
 .card {
 	background-color: white;
 	max-width: $card-mb;
 	border-radius: 10px;
 	overflow: hidden;
 	box-shadow: $default-shadow;
+	margin-bottom: 2rem;
 }
 
 .image-segment {
@@ -75,8 +81,10 @@
 				height: 0.8rem;
 			}
 
-			&:active {
+			&:active,
+			&:hover {
 				filter: brightness(0.95);
+				cursor: pointer;
 			}
 		}
 	}

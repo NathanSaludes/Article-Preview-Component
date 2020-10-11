@@ -15,9 +15,9 @@ html {
 body {
   background-color: #ecf2f8;
   margin: 0;
-  padding: 0 2rem;
+  padding: 5rem 0 2rem;
   line-height: 1.5;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,9 +28,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+.component_title {
+  color: #9eafc2;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -40,6 +42,7 @@ body {
   overflow: hidden;
   -webkit-box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.014), 0 12.5px 10px rgba(0, 0, 0, 0.02), 0 30.1px 24.1px rgba(0, 0, 0, 0.026), 0 100px 80px rgba(0, 0, 0, 0.04);
           box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.014), 0 12.5px 10px rgba(0, 0, 0, 0.02), 0 30.1px 24.1px rgba(0, 0, 0, 0.026), 0 100px 80px rgba(0, 0, 0, 0.04);
+  margin-bottom: 2rem;
 }
 
 .image-segment {
@@ -116,9 +119,10 @@ body {
   height: 0.8rem;
 }
 
-.content-segment .content__author .share-button:active {
+.content-segment .content__author .share-button:active, .content-segment .content__author .share-button:hover {
   -webkit-filter: brightness(0.95);
           filter: brightness(0.95);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
